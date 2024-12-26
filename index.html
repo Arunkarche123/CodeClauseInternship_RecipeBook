@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Manager</h1>
+  </header>
+  <main>
+    <section id="form-section">
+      <h2>Add Recipe</h2>
+      <form id="recipe-form">
+        <label for="name">Recipe Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" rows="3" required></textarea>
+        
+        <label for="ingredients">Ingredients (comma-separated):</label>
+        <textarea id="ingredients" rows="3" required></textarea>
+        
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" accept="image/*">
+        
+        <button type="submit">Add Recipe</button>
+      </form>
+    </section>
+    <section id="recipe-list">
+      <h2>Your Recipes</h2>
+      <div id="recipes"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
